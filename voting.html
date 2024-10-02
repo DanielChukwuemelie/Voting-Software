@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voting Eligibility Software</title>
+
+  <link rel="stylesheet" href="voting.css">
+
+</head>
+
+<body>
+
+    <img src="./img/nigeria-flag.png" width="75" height="50">
+    <h3>FEDERAL REPUBLIC OF NIGERIA </h3>
+
+    <label>
+
+        <h1> FOR THE UPCOMING <b> GENERAL ELECTIONS </b> FOR FEDERAL AND STATE LEVELS</h1>
+
+        <p>You are required to check your eligibility as your data will be captured and used to verification
+            before you can cast your vote.
+        </p>
+
+    </label>
+
+  <div class="container">
+
+    <hr size="3px" color="#008e25" width="95%">
+
+    <h1>Check Your Voting Eligibility</h1>
+    <p>Enter your details to check if you're eligible to vote:</p>
+
+    <form id="vote-form">
+      <label for="age">Enter Your Age:</label>
+      <input type="number" id="age" placeholder="Enter your age" required>
+
+      <label for="nationality">Enter Your Nationality (CAPS):</label>
+      <input type="text" id="nationality" placeholder="Enter your nationality" required>
+
+      <label for="time">Enter Arrival Time (in 24-hour format):</label>
+      <input type="number" id="time" placeholder="Enter time of arrival" required>
+
+      <label for="id">Do You Have Voter ID? (yes/no):</label>
+      <input type="text" id="id" placeholder="yes or no" required>
+
+      <label for="registration">Are You Registered to Vote? (yes/no):</label>
+      <input type="text" id="registration" placeholder="yes or no" required>
+
+      <label for="health">Do You Have Any Health Issues? (yes/no):</label>
+      <input type="text" id="health" placeholder="yes or no" required>
+
+      <label for="crime">Have You Ever Been Convicted of a Crime? (yes/no):</label>
+      <input type="text" id="crime" placeholder="yes or no" required>
+
+      <button type="button" id="submit-btn">Check Eligibility</button>
+    </form>
+
+    <div id="result"></div>
+
+
+    <hr size="3px" color="#008e25" width="95%">
+
+  </div>
+
+  <script src="voting.js"></script>
+
+</body>
+
+</html>
